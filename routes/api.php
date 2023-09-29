@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::any('/' . env('TELEGRAM_BOT_TOKEN'), [App\Http\Controllers\TelegramController::class, 'index'])->name('webhook');
