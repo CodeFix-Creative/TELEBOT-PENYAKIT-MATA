@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\GejalaController;
 use App\Http\Controllers\DiagnosaController;
 use App\Http\Controllers\PenyakitController;
+use App\Http\Controllers\TelegramController;
 
 /*
 |--------------------------------------------------------------------------
