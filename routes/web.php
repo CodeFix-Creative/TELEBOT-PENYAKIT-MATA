@@ -22,6 +22,8 @@ Route::get('/', function () {
  return redirect()->route('dashboard.index');
 });
 
+Route::get('test-bot', [TelegramController::class, 'testBot'])->name('test.bot');
+
 // DASHBOARD
 Route::resource('dashboard', DashboardController::class);
 

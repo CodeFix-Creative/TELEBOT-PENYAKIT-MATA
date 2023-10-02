@@ -31,7 +31,7 @@ class TelegramController extends Controller
         $action = $result->message->text;
         $userId = $result->message->from->id;
 
-        
+
         if($action == "/start") {
             $text = "Selamat datang di Bot Telegram Diagnosis Penyakit Mata . Silahkan pilih menu di bawah ini: ";
 
@@ -42,6 +42,14 @@ class TelegramController extends Controller
             ]);
 
         }
+    }
+
+    public function testBot(){
+      $telegram = new Api('6685862400:AAF_LzAXhntzIJ5KqHJX2agKhT9JbBLtTgk');
+
+      $response = $telegram->getMe();
+
+      dd($response);
     }
 
     /**
