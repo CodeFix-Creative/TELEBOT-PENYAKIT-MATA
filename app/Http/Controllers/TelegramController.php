@@ -13,7 +13,7 @@ use Carbon\Carbon;
 class TelegramController extends Controller
 {
 
-    use RequestTrait, MakeComponents;
+    // use RequestTrait, MakeComponents;
 
     private $mainMenu = [
         ["Record Diagnosa Saya"],
