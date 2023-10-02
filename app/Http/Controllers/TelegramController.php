@@ -9,6 +9,7 @@ use App\Models\Penyakit;
 use App\Models\PenyakitGejala;
 use App\Models\Diagnosa;
 use Carbon\Carbon;
+use Telegram\Bot\Api;
 
 class TelegramController extends Controller
 {
